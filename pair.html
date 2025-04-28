@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pair with Me</title>
+  <title>Ambil Kode Pair Whatsapp - Ayik Host</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
@@ -142,15 +142,15 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">© GlobalTechInfo</h3>
+            <h3 class="centered-text">.:AYIK HOST:.</h3>
             <br>
-            <h6>Enter your number with a country code.</h6>
+            <h6>Input Nomor WA Kamu, Muali dengan Kode Negara.</h6>
             <div class="input-container">
-              <input placeholder="923444844060" type="number" id="number" placeholder="Enter your phone number with a country code" name="">
-              <button id="submit">Submit</button>
+              <input placeholder="628516171xxxx" type="number" id="number" placeholder="Masukkan nomor WA-mu" name="">
+              <button id="submit">Kirim</button>
             </div>
             
-            <a id="waiting-message" class="centered-text" style="display: none;">Please wait for some time</a>
+            <a id="waiting-message" class="centered-text" style="display: none;">Tunggu sebentar...</a>
             <br>
             <br>
             <main id="pair"></main>
@@ -183,9 +183,9 @@
     b.addEventListener("click", async (e) => {
       e.preventDefault();
       if (!c.value) {
-        a.innerHTML = '<a style="color:black;font-weight:bold">Enter your WhatsApp number with a country code</a><br><br>';
+        a.innerHTML = '<a style="color:black;font-weight:bold">Input Nomor WA Kamu, Muali dengan Kode Negara</a><br><br>';
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
-        a.innerHTML = '<a style="color:black;font-weight:bold">Invalid number format</a><br><br>';
+        a.innerHTML = '<a style="color:black;font-weight:bold">Format nomor tidak valid</a><br><br>';
       } else {
         const bc = c.value.replace(/[^0-9]/g, "");
         let bb = "";
@@ -204,10 +204,10 @@
         c.type = "text";
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
-        a.innerHTML = '<a style="color:black;font-weight:bold">Please wait for some time</a><br><br>';
+        a.innerHTML = '<a style="color:black;font-weight:bold">Tunggu sebentar yaa...</a><br><br>';
         let { data } = await axios(`/code?number=${bc}`);
         let code = data.code || "Service Unavailable";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:black;font-weight:bold">' + code + '</span></font><br><br><br>';
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">KODE PAIR: <span style="color:black;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
     });
   </script>
