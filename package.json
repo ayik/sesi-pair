@@ -1,5 +1,5 @@
 {
-  "name": "qasim",
+  "name": "ayik",
   "version": "0.0.1",
   "type": "commonjs",
   "description": "A multi-functional WhatsApp bot Pairing Web and QR Scanner.",
@@ -8,12 +8,12 @@
     "node": ">=20.0.0"
     },
   "scripts": {
-    "run": "pm2 start index.js --deep-monitoring --attach --name qasim",
-    "qasim": "pm2 start index.js --deep-monitoring --attach --name qasim",
-    "start": "pm2 start index.js --deep-monitoring --attach --name qasim",
-    "stop": "pm2 stop qasim",
-    "restart": "pm2 restart qasim",
-    "reload": "pm2 reload qasim",
+    "run": "pm2 start index.js --deep-monitoring --attach --name ayik",
+    "qasim": "pm2 start index.js --deep-monitoring --attach --name ayik",
+    "start": "pm2 start index.js --deep-monitoring --attach --name ayik",
+    "stop": "pm2 stop ayik",
+    "restart": "pm2 restart ayik",
+    "reload": "pm2 reload ayik",
     "dev": "nodemon index.js"
   },
   "keywords": [
